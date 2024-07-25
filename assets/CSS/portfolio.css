@@ -1,0 +1,43 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem 0;
+}
+
+
+.portfolio li .title{
+    font-weight: 700;
+    font-size: 1.25rem;
+   margin: 0;
+   margin-bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portfolio li .title.github::before{
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/icon/Group\ \(2\).svg');
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+
+.portfolio li a:hover{
+    text-decoration: underline;
+}

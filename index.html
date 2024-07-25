@@ -16,26 +16,115 @@
     <link rel="stylesheet" href="./assets/fonts/NeueMachina-Regular.otf" />
     <link rel="stylesheet" href="./assets/CSS/global.css" />
     <link rel="stylesheet" href="./assets/CSS/header.css" />
-     
+    <link rel="stylesheet" href="./assets/CSS/acordeon.css" />
+    <link rel="stylesheet" href="./assets/CSS/language.css" />
+    <link rel="stylesheet" href="./assets/CSS/portfolio.css" />
+    <link rel="stylesheet" href="./assets/CSS/experience.css" />
+    <link rel="stylesheet" href="./assets/CSS/skills.css" />
 </head>
 
 <body>
 
-    <div class="main">
+    <main class="main">
     <header class="header">
         <img src="./assets/img/img-perfil.jfif" alt="Foto de Clarice Mendes" class="photo"/>
 
-        <h1 class="title">Olá, <br>eu sou a Clarice Mendes</h1>
+        <h1 class="title">Olá, <br>eu sou [seu nome]</h1>
 
         <div class="information">
-            <p class="job">Junior Front-End Developer</p>
-            <p class="location">Belém - BR</p>
-            <p class="phone">(91) 98481-4565</p>
-            <p class="mail">clarmendzz@gmail.com</p>
+            <p class="job">Sua profissão</p>
+            <p class="location">Cidade - BR</p>
+            <p class="phone"><a href="tel: (00) 0000-0000">(00) 0000-0000</a></p>
+            <p class="mail"><a href="mailto: exemplo@email.com">exemplo@email.com</a></p>
         </div>
         
+       
     </header>
+    <section class="acordeon ">
+        <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+        </button>
+
+        <div class="content">
+            
+            <ul class="languages">
+                <li>Idioma 01</li>
+                <li>Idioma 02</li>
+            </ul>
+        </div>
+    </section>
+    <section class="acordeon ">
+        <button class="trigger" type="button">
+               <h2>Portfólio</h2> 
+        </button>
+
+        <div class="content">
+          <ul class="portfolio">
+            <li>
+                <h3 class="title github">Projeto 01</h3>
+            <a href="">link</i></a></li>
+            <li>
+                <h3 class="title github">Projeto 01</h3>
+            <a href="">link</a></li>
+            <li>
+                <h3 class="title github">Projeto 01</h3>
+            <a href="">link</a></li>
+            <li>
+                <h3 class="title github">Projeto 01</h3>
+            <a href="">link</a></li>
+          </ul>
+        </div>
+    </section>
+    <section class="acordeon ">
+        <button class="trigger" type="button">
+            <h2>Experiência Profissional</h2>
+        </button>
+
+        <div class="content">
+          <ul class="experience">
+            <li>
+                <h3 class="title">Experiência 01</h3>
+                <span class="period">Jan 24 - Atualmente</span>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio cupiditate eum voluptatum possimus asperiores iusto! 
+            Praesentium accusamus, porro molestiae quod modi aliquid rerum aliquam nesciunt assumenda architecto, quis repudiandae.</p>
+        </li>
+           
+          </ul>
+        </div>
+    </section>
+    <section class="acordeon ">
+        <button class="trigger" type="button">
+                <h2>Skills</h2>
+        </button>
+
+        <div class="content">
+            <div class="skills">
+          <section class="tools">
+            <h3>Tecnologias</h3>
+            <ul>
+                <li><img src="./assets/img/icon/Group (2).svg" title="GitHub"/></li>
+                <li><img src="./assets/img/icon/Group 484865.svg" title="JavaScript"/></li>
+                <li><img src="./assets/img/icon/Group 484862.svg" title="HTML"/></li>
+                <li><img src="./assets/img/icon/Group 484864.svg" title="React"/></li>
+            </ul>
+          </section>
+
+          <section class="personal">
+            <h3>Habilidades pessoais</h3>
+            <ul>
+                <li>Habilidade 01</li>
+                <li>Habilidade 02</li>
+                <li>Habilidade 03</li>
+                <li>Habilidade 04</li>
+            </ul>
+          </section>
+        </div>
+    </section>
 </div>
+    </main>
+
+
+<script src="./assets/js/acordeon.js"></script>
 </body>
 
 </html>
