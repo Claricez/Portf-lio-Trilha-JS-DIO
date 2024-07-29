@@ -59,7 +59,22 @@ function updatePortfolio(profileData) {
     .join("");
 }
 
-function updateTrigger(profileData) {}
+function updateTrigger(profileData) {
+  const professionalExperience = document.getElementById(
+    "profile.professionalExperience"
+  );
+
+  profileData.professionalExperience.map((experience) => {
+    return `
+         <li>
+                <h3 class="title" >${experience.name}</h3>
+                <span class="period" >${experience.period}</span>
+           <p >${experience.period}</p>
+        </li>
+           
+        `;
+  });
+}
 
 (async () => {
   const profileData = await fecthProfileData();
