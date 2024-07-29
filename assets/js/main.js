@@ -26,8 +26,20 @@ function updateSoftSkills(profileData) {
     .map((skill) => `<li>${skill}</li>`)
     .join("");
 }
+
+function updateHardSkills(profileData) {
+  const hardSkills = document.getElementById("profile.skills.hardSkills");
+
+  hardSkills.innerHTML = profileData.skills.hardSkills
+    .map(
+      (skill) => ` <li><img src="${skill.logo}" title="${skill.name}"/></li>`
+    )
+    .join("");
+}
+
 (async () => {
   const profileData = await fecthProfileData();
   updateProfileInfo(profileData);
   updateSoftSkills(profileData);
+  updateHardSkills(profileData);
 })();
