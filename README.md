@@ -7,6 +7,5 @@ Esse portfólio foi criado para a plataforma DIO, na trilha de JavaScript.
 - **CSS3**: Estilização e layout
 - **JavaScript**: Funcionalidades interativas
 
-## Estrutura do Projeto
 
 
